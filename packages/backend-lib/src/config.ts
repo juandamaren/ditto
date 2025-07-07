@@ -143,6 +143,7 @@ const BaseRawConfigProps = {
     Type.String({ format: "naturalNumber" }),
   ),
   computePropertiesSplit: Type.Optional(BoolStr),
+  twentyCrmUrl: Type.Optional(Type.String()),
 };
 
 function defaultTemporalAddress(inputURL?: string): string {
