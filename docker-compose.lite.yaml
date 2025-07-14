@@ -46,7 +46,7 @@ services:
   # useful for upgrading dittofeed
   admin-cli:
     image: dittofeed/dittofeed-admin-cli:${IMAGE_TAG:-v0.22.0}
-    entrypoint: []
+    entrypoint: [""]
     profiles: ["admin-cli"]
     command: tail -f /dev/null
     tty: true
